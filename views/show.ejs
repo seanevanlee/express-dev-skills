@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    ID: <%= skill.id %>
+    <br />
+    Name: <%= skill.name %>
+    <form method="POST" action="/skills/<%= skill.id %>?_method=DELETE">
+      <button>Delete Skill</button>
+    </form>
+  </body>
+</html>
